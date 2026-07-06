@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akıllı Gardırop & İnteraktif Giydirme Asistanı</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="app-container">
+       <header>
+    <h1>📊 Akıllı Renk Teorisi & Kombin Analizörü</h1>
+    <p>Sağ taraftan parçaları seçin; sistem arkada çalışan renk matrisiyle anlık uyum analizi yapsın.</p>
+</header> 
+
+        <div class="workspace">
+            
+            <section class="avatar-section">
+                <h3>👗 Dijital Manken</h3><div class="score-container" id="uyum-skor-kutusu">
+    <span class="score-title">🎨 Kombin Renk Uyumu</span>
+    <div class="score-value" id="uyum-yuzdesi">%0</div>
+    <p class="score-status" id="uyum-durumu">Parçaları seçerek kombini tamamla!</p>
+</div>
+
+                <div class="avatar-container">
+                    <div class="avatar-part head" id="manken-bas"><span>Şal Alanı</span></div>
+                    <div class="avatar-part torso" id="manken-govde"><span>Üst Giyim</span></div>
+                    <div class="avatar-part legs" id="manken-alt"><span>Alt Giyim</span></div>
+                </div>
+                <button class="clear-btn" onclick="gardirobuTemizle()">Gardırobu Sıfırla</button>
+            </section>
+
+            <section class="wardrobe-section">
+                <h3>🛍️ Gardırobundaki Parçalar</h3>
+                <main class="wardrobe-grid" id="gardirob-alani">
+                    </main>
+            </section>
+
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
